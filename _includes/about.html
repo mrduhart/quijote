@@ -1,0 +1,19 @@
+<section id="about" class="text">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2 class="heading">About me</h2>
+
+        <p class="lead">This can be an about section.</p>
+
+        {{ site.about | markdownify }}
+
+      </div>
+
+      <div class="col-lg-5 mx-auto">
+        <p><img src="{{ 'assets/img/japan-mountains.jpg' | relative_url }}" alt="" class="img-fluid rounded-circle"></p>
+      </div>
+
+    </div>
+  </div>
+</section>
