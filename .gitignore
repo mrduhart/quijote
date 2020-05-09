@@ -1,0 +1,7 @@
+_site/
+img/
+vendor/
+blackandwhite-2-0-1/
+*.zip
+# index.html
+jekyll
