@@ -1,0 +1,18 @@
+{% capture cover_path %}{{ '/assets/img/' | relative_url | append: page.image }}{% endcapture %}
+
+<!-- cover  -->
+<section id="intro" style="background-image: url('{{ cover_path }}');" class="intro">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="container clearfix">
+      <div class="row">
+        <div class="col-lg-8 col-md-12 mx-auto">
+
+          {{ page.excerpt }}
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- cover end -->
