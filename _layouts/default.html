@@ -64,7 +64,6 @@
 </head>
 
 <body>
-
   <!-- Header -->
   {% include header.html %}
 
@@ -78,12 +77,27 @@
   {% if layout.script %}
     {% include {{ layout.script }} %}
   {% endif %}
-  <!-- <script src="{{ 'assets/vendor/jquery/jquery.min.js' | relative_url }}"></script>
+  <script src="{{ 'assets/vendor/jquery/jquery.min.js' | relative_url }}"></script>
   <script src="{{ 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' | relative_url }}"></script>
+  <script type="text/javascript">
+    // When the user scrolls the cover out of view, show the navbar.
+    var cover = document.getElementById("cover");
+    var topnav = document.getElementById("topnav");
+    topnav.classList.add("no-opacity");
+
+    window.onscroll = function() {
+      topnav.classList.add("animate");
+
+      var coverIsVisible = cover.getBoundingClientRect().bottom > 0;
+      topnav.classList.toggle("no-opacity", coverIsVisible);
+    }
+  </script>
+  <!--
   <script src="{{ 'assets/vendor/jquery.cookie/jquery.cookie.js' | relative_url }}"> </script>
   <script src="{{ 'assets/vendor/lightbox2/js/lightbox.min.js' | relative_url }}"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"> </script>
-  <script src="{{ 'assets/js/front.js' | relative_url }}"></script> -->
+  <script src="{{ 'assets/js/front.js' | relative_url }}"></script>
+  -->
 </body>
 
 </html>

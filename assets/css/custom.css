@@ -28,3 +28,20 @@ img {
   bottom: 0;
   left: 0;
 }
+
+.no-opacity {
+  opacity: 0;
+}
+
+#topnav.animate {
+  transition: opacity 0.35s ease-out;
+}
+
+#topnav.animate.no-opacity {
+  transition: opacity 0.25s ease-in;
+}
+
+/* Set fixed height for navbar later */
+section:first-child {
+  margin-top: 80px;
+}

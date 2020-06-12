@@ -1,17 +1,8 @@
-- title: Home
-  url: "#intro"
+- title: Inicio
+  url: "/"
 
-- title: About
-  url: "#about"
+- title: Quijote
+  url: "/#about"
 
-- title: Services
-  url: "#services"
-
-- title: Portfolio
-  url: "#portfolio"
-
-- title: Text
-  url: "#text"
-
-- title: Contact
-  url: "#contact"
+- title: Cartas
+  url: "/#portfolio"
