@@ -6,9 +6,10 @@ url: /
 
 name: Cómo ser un quijote
 author: Bronson Duhart
-intro: Mi viaje personal por la vida, documentado a través de letras e imágenes.
+intro: Viajes. Aventuras. Arte. Cartas y locuras.
+# intro: Mi viaje personal por la vida, documentado a través de letras e imágenes.
 about: |
-  This is the template for my blog. Right now, you are reading the about section of it. Welcome and please enjoy my super nice blog. I will now       include some nonsense ipsum to fill space.
+  This is the template for my blog. Right now, you are reading the about section of it. Welcome and please enjoy my super nice blog. I will now include some nonsense ipsum to fill space.
 
   Un día alguien me aconsejó que escribiera, y no he parado de hacerlo desde entonces.
 
