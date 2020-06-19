@@ -18,12 +18,29 @@ layout: default
             <p>Una carta para cada aventura. Algunas veces en la misma ciudad. Siempre diferentes días.</p>
           </div>
         </div>
-        <div class="row">
+        <div class="row post-thumbnails">
           {% for post in site.posts %}
+            {% assign pretty_date=post.date | date: "%A %B %d, %Y" %}
+            {% capture post_image %}{{ '/assets/img/' | relative_url | append: post.image }}{% endcapture %}
           <div class="col-lg-4 col-md-6">
             <div class="box">
-              <a href="{{ post.url | relative_url }}" style="z-index: 2;"></a>
-              <img src="{{ '/assets/img/' | relative_url | append: post.image }}" alt="image" class="img-fluid grayscale-max">
+              <article class="post-thumbnail"
+              style="background-image: url('{{ post_image }}')">
+              <div class="post-details">
+                  <a href="{{ post.url | relative_url }}"></a>
+                  <div class="overlay"></div>
+                  <div class="content">
+                    <div class="row">
+                      <div class="col-10 mx-auto">
+                        <h1>{{ post.place }}</h1>
+                        <p>{{ pretty_date }}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- <img src="{{ '/assets/img/' | relative_url | append: post.image }}" alt="image" class="img-fluid grayscale-max"> -->
+              </article>
             </div>
           </div>
           {% endfor %}
