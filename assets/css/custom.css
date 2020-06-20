@@ -1,11 +1,74 @@
+body {
+  color: #444;
+  background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #111;
+}
+
+.lead {
+  color: #222;
+}
+
+footer {
+  color: #fff;
+  background-color: #111;
+  font-style: initial;
+}
+
+.copyright {
+  color: #fff;
+  font-style: initial;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Muli', cursive;
+  font-family: "Overlock";
+  font-family: "Overpass";
+  font-family: "Rubik";
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.125em;
+  font-family: 'Muli', cursive;
+  font-family: "Montserrat";
+  font-family: "Raleway";
+  font-family: "Work sans";
+  font-weight: 300;
+}
+
+p.lead {
+  font-size: 1.6em;
+  font-family: 'Nixie One', cursive;
+  font-weight: 400;
+}
+
+.text-page {
+  font-size: 1.25em;
+}
+
+nav.navbar a.nav-link {
+  font-style: initial;
+  font-size: 1.2em;
+  color: #111;
+  /* font-weight: 600; */
+}
+
 html, body {
   font-family: "Cardo", "Times New Roman", Times, serif;
   font-family: 'Nixie One', cursive;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  /* color: #212529; */
   background-color: #fff;
+}
+
+.intro {
+  text-align: center;
 }
 
 img {
