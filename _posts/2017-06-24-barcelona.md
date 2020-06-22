@@ -4,11 +4,11 @@ date: 2017-06-24 13:00:00 +02:00
 image: posts/2017-06-24-barcelona/beach.jpg
 
 images:
- - path: posts/2017-06-24-barcelona/agbar-tower.jpg
-   text: agbar-tower
-
  - path: posts/2017-06-24-barcelona/linard-sleeping.jpg
    text: linard-sleeping
+
+ - path: posts/2017-06-24-barcelona/agbar-tower.jpg
+   text: agbar-tower
 
  - path: posts/2017-06-24-barcelona/looking-cool-1.jpeg
    text: looking-cool-1

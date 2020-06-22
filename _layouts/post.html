@@ -19,7 +19,48 @@ layout: default
           </div>
         </div>
 
-        <div class="row no-gutters">
+        {% capture image_path %}{{ '/assets/img/' | relative_url | append: 'posts/2017-06-24-barcelona/agbar-tower.jpg' }}{% endcapture %}
+
+        <!-- <div class="polaroid-container">
+          <div class="polaroid">
+            <div class="polaroid-img">
+              <img src="{{ '/assets/img/' | relative_url | append: 'posts/2017-06-24-barcelona/agbar-tower.jpg' }}" alt="" class="" />
+
+              <img src="{{ '/assets/img/' | relative_url | append: 'about.jpg' }}" alt="" class="" style="" />
+
+              <img src="{{ '/assets/img/' | relative_url | append: 'about.jpg' }}" alt="" class="" style="width: 200px;" />
+            </div>
+
+            <div class="polaroid-txt">
+              <p>This isn't me!</p>
+            </div>
+          </div>
+        </div> -->
+
+        {% for image in page.images %}
+        <div class="polaroid-container">
+          <div class="polaroid">
+            <div class="polaroid-img">
+              <img src="{{ '/assets/img/' | relative_url | append: image.path }}" alt="" class="" />
+            </div>
+
+            <div class="polaroid-txt">
+              <p>{{ image.text }}</p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+
+        <section id="ticket">
+          <div style="background-image: url('{{ image_path }}');">
+            <div>
+            </div>
+            <div>
+            </div>
+          </div>
+        </section>
+
+        <div class="row">
           {% for image in page.images %}
           <div class="col-lg-5 col-md-6">
             <div class="box">
