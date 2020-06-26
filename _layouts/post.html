@@ -51,45 +51,8 @@ layout: default
         </div>
         {% endfor %}
 
-        <section id="ticket">
-          <div style="background-image: url('{{ image_path }}');">
-            <div>
-            </div>
-            <div>
-            </div>
-          </div>
-        </section>
-
-        <div class="row">
-          {% for image in page.images %}
-          <div class="col-lg-5 col-md-6">
-            <div class="box">
-              <!-- <a href="{{ post.url | relative_url }}"></a> -->
-              <img src="{{ '/assets/img/' | relative_url | append: image.path }}" alt="{{ image.text }}" class="post-img img-fluid" />
-            </div>
-          </div>
-          {% endfor %}
-        </div>
-
       </div>
     </div>
   </div>
 </section>
 <!-- text page end -->
-
-<main id="page-body" class="light">
-  <div class="wrapper">
-    <article class="post">
-      <!-- <img class="post-img" src="{{ '/assets/img/' | relative_url | append: page.image }}" ></img> -->
-
-      <!-- <h1 class="post-title">{{ page.title }}</h1> -->
-
-      <!-- <p class="post-date" >
-        <time datetime="{{ page.date }}">
-          {{ page.date | date: '%d-%m-%Y'}}
-        </time>
-      </p> -->
-
-    </article>
-  </div>
-</main>

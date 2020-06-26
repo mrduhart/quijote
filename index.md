@@ -1,5 +1,5 @@
 ---
 title: Home
 layout: home
-image: ein-steig.jpg
+image: barcelona-plane-sunrise.jpg
 ---
