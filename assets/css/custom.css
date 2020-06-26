@@ -46,6 +46,15 @@ p.lead {
   font-weight: 400;
 }
 
+blockquote {
+  font-size: 1.6em;
+}
+blockquote, blockquote * {
+  font-family: 'Nixie One', cursive;
+  font-weight: 400;
+  color: #222;
+}
+
 .text-page {
   font-size: 1.25em;
 }
