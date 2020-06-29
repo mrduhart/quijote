@@ -64,6 +64,10 @@ Y en efecto. Estaba tenso. Me dijo también que no girara tanto el manubrio, y q
 
 Anduvimos a lo largo de la costa hasta la Barceloneta. Ahí, trajes de baño y chapuzones. Bueno, Linard prefirió acostarse a roncar mientras que Ernesto y yo hacíamos piruetas en las barras.
 
+{% assign path='posts/2017-06-24-barcelona/linard-sleeping.jpg' %}
+{% assign text='Linard taking a nap' %}
+{% include post-image.html path=path text=text %}
+
 Después nos seguimos más hacia el norte y llegamos a otra playa, no tan ocupada como la Barceloneta. En realidad, ésta la disfruté mucho. Tenía rato sin estar en una playa y hoy fue la primera vez que la visitaba desde que llegué a la ciudad hace seis días. Ahora tengo grabado el día soleado, y la arena rozándome los pies cuando estaba sentado en el pequeño borde de playa que se inclina junto al mar.
 
 Ernesto ya estaba en el agua antes que Linard y yo. Diría que él fue de los tres quien más disfrutó del mar. Debe ser porque suele nadar mucho allá donde vive en Oaxaca. Me uní a él, y hasta me intentó enseñarme a flotar "de a muertito".  Digo que lo intentó, porque me pesa demasiado el bombo, con lo que mi cadera me hizo hundirme como ancla.
