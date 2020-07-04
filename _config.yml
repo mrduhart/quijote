@@ -1,8 +1,10 @@
 # github pages
-# url: /
-# baseurl: /quijote
+url: https://mrduhart.github.io
+baseurl: /quijote
+ga_id: UA-153237091-3
 # dev
-url: /
+# url: /
+# ga_id: UA-153237091-1
 
 name: Cómo ser un quijote
 author: Bronson Duhart
@@ -20,7 +22,6 @@ about: |
 
   *Soy un hombre de visión con la cualidad de hacer las visiones realidad, así que vengo a ofrecerte una como regalo de cumpleaños. No tienes que tomarla, basta con escucharla. Te lo he dicho, te estoy mostrando un camino y queda en ti si quieres caminarlo; no es el único el mío.*
 
-ga_id: UA-153237091-1
 
 defaults:
   -
