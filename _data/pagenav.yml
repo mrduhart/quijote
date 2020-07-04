@@ -1,0 +1,8 @@
+- title: Inicio
+  url: "/"
+
+- title: Quijote
+  url: "/#about"
+
+- title: Cartas
+  url: "/#portfolio"

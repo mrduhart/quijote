@@ -1,0 +1,21 @@
+<footer style="background-color: #111;">
+  <div class="container">
+    {% if layout.footer %}
+      {% include {{ layout.footer }} %}
+    {% endif %}
+
+    <div class="row copyright">
+
+      <div class="col-md-8">
+        <p class="mb-md-0 text-center text-md-left">
+          {% include copyright.html %}
+        </p>
+      </div>
+
+      <div class="col-md-4">
+        <p class="credit mb-md-0 text-center text-md-right">Diseño inspirado por <a href="https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form" target="_blank">Bootstrapious</a></p>
+      </div>
+
+    </div>
+  </div>
+</footer>

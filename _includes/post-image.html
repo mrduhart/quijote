@@ -1,0 +1,11 @@
+<div class="polaroid-container">
+  <div class="polaroid">
+    <div class="polaroid-img">
+      <img src="{{ '/assets/img/' | relative_url | append: include.path }}" alt="" class="" />
+    </div>
+
+    <div class="polaroid-txt">
+      <p>{{ include.text }}</p>
+    </div>
+  </div>
+</div>

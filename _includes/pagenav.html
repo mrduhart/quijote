@@ -1,0 +1,13 @@
+<nav id="navbarSupportedContent" class="collapse navbar-collapse">
+
+  <ul class="navbar-nav ml-auto">
+    {% for nav in site.data.pagenav %}
+      <li class="nav-item px-2">
+        <a href="{{ nav.url }}" class="nav-link link-scroll">
+          {{ nav.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+
+</nav>

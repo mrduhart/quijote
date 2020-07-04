@@ -1,0 +1,38 @@
+# github pages
+url: https://mrduhart.github.io
+baseurl: /quijote
+ga_id: UA-153237091-3
+# dev
+# url: /
+# ga_id: UA-153237091-1
+
+name: Cómo ser un quijote
+author: Bronson Duhart
+intro: Viajes. Aventuras. Arte.
+# intro: Viajes. Aventuras. Arte. Cartas y locuras.
+# intro: Mi viaje personal por la vida, documentado a través de letras e imágenes.
+about: |
+  > m. Hombre de aventuras e ideales que se embarca en controversias por defender justicias que no le atañen.
+
+  ¿Quién soy? Soy Bronson Duhart. Cuerdo y delirante. Realista y soñador. Alguien de buen corazón y mala mente.
+
+  Un día alguien me aconsejó que escribiera, y no he parado de hacerlo desde entonces. Otro día, a alguien le prometí que le daríamos la vuelta al mundo.
+
+  Éste es el resultado de ambas.
+
+  *Soy un hombre de visión con la cualidad de hacer las visiones realidad, así que vengo a ofrecerte una como regalo de cumpleaños. No tienes que tomarla, basta con escucharla. Te lo he dicho, te estoy mostrando un camino y queda en ti si quieres caminarlo; no es el único el mío.*
+
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: /:year/:month/:day/:title
+      excerpt_separator: <!-- more -->
+
+show_drafts: false
+future: false
+markdown: kramdown
