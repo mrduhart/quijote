@@ -231,7 +231,8 @@ body {
 
 .polaroid * {
   font-family: 'Caveat', cursive;
-  font-size: 1.3em;
+  font-size: 1.14em;
+  line-height: 1em;
 }
 
 .polaroid-img, .polaroid-txt {
