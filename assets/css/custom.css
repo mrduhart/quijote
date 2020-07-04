@@ -22,6 +22,10 @@ footer {
   font-style: initial;
 }
 
+.overlay {
+  opacity: 0.3;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Muli', cursive;
   font-family: "Overlock";
@@ -40,14 +44,36 @@ p {
   font-weight: 300;
 }
 
+.intro h1 {
+  font-size: 2em;
+}
+
 p.lead {
-  font-size: 1.6em;
+  /* font-size: 1.6em; */
   font-family: 'Nixie One', cursive;
   font-weight: 400;
 }
 
+@media (min-width: 992px) {
+  .intro h1 {
+    font-size: 2.4em;
+  }
+
+  p.lead {
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .content {
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+  }
+}
+
 blockquote {
-  font-size: 1.6em;
+  font-size: 1.2em;
 }
 blockquote, blockquote * {
   font-family: 'Nixie One', cursive;
