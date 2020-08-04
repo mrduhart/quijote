@@ -69,7 +69,8 @@ Entonces me dijiste:
 
 ---Sólo relájate, amigo. Estás muy tenso. Necesitas soltar, y dejar que la bici se lleve sola.
 
-Te referías a que la guiara con el cuerpo, inclinándome ligeramente hacia donde me quisiera mover, en lugar de llevarla tan rígidamente.
+Te referías a que la guiara con el cuerpo, inclinándome ligeramente hacia donde me quisiera mover, en lugar de llevarla con tanta rigidez.
+
 
 Te referías a que disfrutara del paseo, sin darle monumental importancia a hacerlo bien.
 
