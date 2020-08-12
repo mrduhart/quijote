@@ -1,6 +1,6 @@
 _site/
 _design/
-# vendor/
+vendor/
 _jekyll/
 blackandwhite-2-0-1/
 *.zip
