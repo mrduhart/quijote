@@ -50,9 +50,7 @@ correr a un paso constante, y dejar que la mente se serenara con la respiración
 Bueno, suficiente de correr, que no soy Murakami (a quien no se supone que conozco todavía, pero bendita libertad literaria). Mejor, una foto que le tomé en el camino al _penedificio_:
 
 {% assign path='posts/2017-06-24-barcelona/agbar-tower.jpg' %}
-
 {% assign text='Torre Agbar, aunque te <br>cambies de nombre' %}
-
 {% include post-image.html path=path text=text %}
 
 ¡Hey! No creas que ya me olvidé de ti, Ernesto.
