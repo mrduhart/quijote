@@ -1,16 +1,17 @@
 ---
 layout: default
-<!-- style: posts/style.html -->
+style: post/style.html
 ---
 
 {% assign pretty_date=page.date | date: "%A %B %d, %Y" %}
 {% include cover.html title=page.place subtitle=pretty_date %}
 
-<!-- text page-->
+<!-- text page -->
 <section id="text" class="text-page">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 mx-auto">
+        <!-- Has a nice styling (might use later): -->
         <!-- <h2 class="heading">Text page</h2> -->
 
         <div class="row">
@@ -18,38 +19,6 @@ layout: default
             {{ content }}
           </div>
         </div>
-
-        {% capture image_path %}{{ '/assets/img/' | relative_url | append: 'posts/2017-06-24-barcelona/agbar-tower.jpg' }}{% endcapture %}
-
-        <!-- <div class="polaroid-container">
-          <div class="polaroid">
-            <div class="polaroid-img">
-              <img src="{{ '/assets/img/' | relative_url | append: 'posts/2017-06-24-barcelona/agbar-tower.jpg' }}" alt="" class="" />
-
-              <img src="{{ '/assets/img/' | relative_url | append: 'about.jpg' }}" alt="" class="" style="" />
-
-              <img src="{{ '/assets/img/' | relative_url | append: 'about.jpg' }}" alt="" class="" style="width: 200px;" />
-            </div>
-
-            <div class="polaroid-txt">
-              <p>This isn't me!</p>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- {% for image in page.images %}
-        <div class="polaroid-container">
-          <div class="polaroid">
-            <div class="polaroid-img">
-              <img src="{{ '/assets/img/' | relative_url | append: image.path }}" alt="" class="" />
-            </div>
-
-            <div class="polaroid-txt">
-              <p>{{ image.text }}</p>
-            </div>
-          </div>
-        </div>
-        {% endfor %} -->
 
       </div>
     </div>
