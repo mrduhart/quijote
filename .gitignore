@@ -1,7 +1,9 @@
 _site/
 _design/
-vendor/
 _jekyll/
+
+vendor/
 blackandwhite-2-0-1/
+
 *.zip
 # index.html

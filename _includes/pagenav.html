@@ -2,11 +2,11 @@
 
   <ul class="navbar-nav ml-auto">
     {% for nav in site.data.pagenav %}
-      <li class="nav-item px-2">
-        <a href="{{ nav.url | relative_url }}" class="nav-link link-scroll">
-          {{ nav.title }}
-        </a>
-      </li>
+    <li class="nav-item px-2">
+      <a href="{{ nav.url | relative_url }}" class="nav-link link-scroll">
+        {{ nav.title }}
+      </a>
+    </li>
     {% endfor %}
   </ul>
 
