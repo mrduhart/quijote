@@ -1,7 +1,30 @@
 {% capture cover_path %}{{ '/assets/img/' | relative_url | append: page.image }}{% endcapture %}
 
+
+<div id="cover" class="parallax intro cover">
+  <img id="parallax-img" src="{{ cover_path }}" alt="" class="cover grayscale-max" />
+
+  <div class="overlay"></div>
+
+  <div class="content">
+    <div class="container clearfix">
+      <div class="row">
+        <div class="col-lg-8 col-md-12 mx-auto">
+          <p>{{ include.pretitle }}</p>
+          <h1>{{ include.title }}</h1>
+          <p class="lead">{{ include.subtitle }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
 <!-- cover  -->
-<section id="cover" style="background-image: url('{{ cover_path }}');" class="intro grayscale-max cover">
+<!-- background-image: url('{{ cover_path }}'); -->
+<section id="cover" style="background-image: url('{{ cover_path }}');" class="intro cover">
   <div class="overlay"></div>
   <div class="content">
     <div class="container clearfix">

@@ -1,3 +1,32 @@
+.parallax {
+  height: 100%;
+  width: 100%;
+}
+
+section, footer {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+}
+
+img.cover {
+  display: block;
+  position: fixed;
+  min-height: 100%;
+  min-width: 1280px;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1280px) {
+  img.cover {
+    left: 50%;
+    margin-left: -640px;
+  }
+}
+
 body {
   color: #444;
   background-color: #fff;
