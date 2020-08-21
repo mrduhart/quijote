@@ -21,7 +21,9 @@
   <link rel="stylesheet" href="{{ 'assets/vendor/bootstrap/css/bootstrap.min.css' | relative_url }}">
 
   <!-- Font Awesome CSS -->
-  <link rel="stylesheet" href="{{ 'assets/vendor/font-awesome/css/font-awesome.min.css' | relative_url }}">
+  <!-- <link rel="stylesheet" href="{{ 'assets/vendor/font-awesome/css/font-awesome.min.css' | relative_url }}"> -->
+
+  <script src="https://kit.fontawesome.com/6a0a58b2c5.js" crossorigin="anonymous"></script>
 
   <!-- Google fonts - Montserrat for headings, Cardo for copy -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700">
@@ -84,16 +86,46 @@
   <script src="{{ 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' | relative_url }}"></script>
 
   <script type="text/javascript">
-    // When the user scrolls the cover out of view, show the navbar.
+    // Controls navbar behavior
+
     var cover = document.getElementById("cover");
     var topnav = document.getElementById("topnav");
+    var footer = document.getElementById("page-footer");
+
+    var pageIsScrolled,
+        reachedBottom,
+        coverIsGone,
+        prevScroll,
+        currentScroll,
+        scrolledDown,
+        hideNavbar;
+
+    const COVER_THRESHOLD = -10; // Used to trigger coverIsGone
+    prevScroll = window.pageYOffset;
     topnav.classList.add("no-opacity");
 
     window.onscroll = function() {
       topnav.classList.add("animate");
 
-      var coverIsVisible = cover.getBoundingClientRect().bottom > 0;
-      topnav.classList.toggle("no-opacity", coverIsVisible);
+      // Make navbar visible when page is scrolled
+      // When cover is out of view:
+      //   1. Scroll down -> hide navbar
+      //   2. Scroll up -> show navbar
+
+      // TODO: show navbar when page reaches bottom
+      // reachedBottom =
+      //   (window.innerHeight + window.pageYOffset)
+      //   >= document.body.offsetHeight;
+
+      pageIsScrolled = window.pageYOffset > 0;
+      coverIsGone = cover.getBoundingClientRect().bottom < COVER_THRESHOLD;
+
+      currentScroll = window.pageYOffset;
+      scrolledDown = currentScroll >= prevScroll;
+      prevScroll = currentScroll;
+
+      hideNavbar = !pageIsScrolled || (coverIsGone && scrolledDown);
+      topnav.classList.toggle("no-opacity", hideNavbar);
     }
   </script>
   <!--
