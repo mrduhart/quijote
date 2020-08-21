@@ -1,43 +1,22 @@
 {% capture cover_path %}{{ '/assets/img/' | relative_url | append: page.image }}{% endcapture %}
 
-
-<div id="cover" class="parallax intro cover">
-  <img id="parallax-img" src="{{ cover_path }}" alt="" class="cover grayscale-max" />
-
-  <div class="overlay"></div>
-
-  <div class="content">
-    <div class="container clearfix">
-      <div class="row">
-        <div class="col-lg-8 col-md-12 mx-auto">
-          <p>{{ include.pretitle }}</p>
-          <h1>{{ include.title }}</h1>
-          <p class="lead">{{ include.subtitle }}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-
-
 <!-- cover  -->
-<!-- background-image: url('{{ cover_path }}'); -->
-<section id="cover" style="background-image: url('{{ cover_path }}');" class="intro cover">
+<section id="cover" class="intro cover">
+  <img id="img-cover" src="{{ cover_path }}" alt="" class="parallax grayscale-max" />
+
   <div class="overlay"></div>
+
   <div class="content">
     <div class="container clearfix">
       <div class="row">
         <div class="col-lg-8 col-md-12 mx-auto">
-          <!-- <p class="italic">Oh, hello, nice to meet you!</p> -->
           <p>{{ include.pretitle }}</p>
           <h1>{{ include.title }}</h1>
           <p class="lead">{{ include.subtitle }}</p>
-          <!-- <p class="italic">Mi viaje personal por la vida, documentado a través de letras e imágenes.</p> -->
         </div>
       </div>
     </div>
   </div>
+
 </section>
 <!-- cover end -->
