@@ -1,27 +1,23 @@
+html, body {
+  height: initial;
+}
+
 section, footer {
   position: relative;
   z-index: 1;
   background-color: #fff;
 }
 
+section {
+  min-height: 100vh;
+}
+
 section.intro {
   min-height: initial;
+  height: 100vh;
 }
 
 img.parallax {
-  /*
-  w h x y
-  = = a a *
-  = < a a *
-  = > a h *
-  < = a a *
-  < < a a *
-  < > a h *
-  > = w a *
-  > < w a *
-  > > w h *
-  */
-
   position: fixed;
 
   /* Center horizontally */

@@ -86,12 +86,43 @@
   <script src="{{ 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' | relative_url }}"></script>
 
   <script type="text/javascript">
+    const cover = document.getElementById("cover");
+    const topnav = document.getElementById("topnav");
+    const footer = document.getElementById("page-footer");
+    const coverImage = document.getElementById("img-cover");
+
+    // Resizes cover image
+    function resizeCoverImage(targetWidth, targetHeight) {
+      const targetRatio = targetWidth / targetHeight;
+      const imageWidth = coverImage.clientWidth;
+      const imageHeight = coverImage.clientHeight;
+      const imageRatio = imageWidth / imageHeight;
+
+      if (imageRatio <= targetRatio) {
+        coverImage.style.width = targetWidth + "px";
+        coverImage.style.height = "auto";
+      }
+      else {
+        coverImage.style.width = "auto";
+        coverImage.style.height = targetHeight + "px";
+      }
+    }
+
+    var coverRO = new ResizeObserver( entries => {
+      for (let entry of entries) {
+        const contentRect = entry.contentRect;
+        const coverWidth = entry.contentRect.width;
+        const coverHeight = entry.contentRect.height;
+        resizeCoverImage(coverWidth, coverHeight);
+      }
+    });
+
+    window.addEventListener('load', (event) => {
+      resizeCoverImage(cover.clientWidth, cover.clientHeight);
+      coverRO.observe(cover);
+    });
+
     // Controls navbar behavior
-
-    var cover = document.getElementById("cover");
-    var topnav = document.getElementById("topnav");
-    var footer = document.getElementById("page-footer");
-
     var pageIsScrolled,
         reachedBottom,
         coverIsGone,
@@ -100,7 +131,7 @@
         scrolledDown,
         hideNavbar;
 
-    const COVER_THRESHOLD = -10; // Used to trigger coverIsGone
+    const coverThreshold = -10; // Used to trigger coverIsGone
     prevScroll = window.pageYOffset;
     topnav.classList.add("no-opacity");
 
@@ -118,7 +149,7 @@
       //   >= document.body.offsetHeight;
 
       pageIsScrolled = window.pageYOffset > 0;
-      coverIsGone = cover.getBoundingClientRect().bottom < COVER_THRESHOLD;
+      coverIsGone = cover.getBoundingClientRect().bottom < coverThreshold;
 
       currentScroll = window.pageYOffset;
       scrolledDown = currentScroll >= prevScroll;
