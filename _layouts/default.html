@@ -86,47 +86,43 @@
   <script src="{{ 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' | relative_url }}"></script>
 
   <script type="text/javascript">
+    const cover = document.getElementById("cover");
+    const topnav = document.getElementById("topnav");
+    const footer = document.getElementById("page-footer");
+    const coverImage = document.getElementById("img-cover");
+
     // Resizes cover image
-    function resize_cover_image(w, h) {
-      const a = w / h;
+    function resizeCoverImage(targetWidth, targetHeight) {
+      const targetRatio = targetWidth / targetHeight;
+      const imageWidth = coverImage.clientWidth;
+      const imageHeight = coverImage.clientHeight;
+      const imageRatio = imageWidth / imageHeight;
 
-      const img = document.getElementById("img-cover");
-      const iw = img.clientWidth;
-      const ih = img.clientHeight;
-      const ai = iw / ih;
-
-      if (ai <= a) {
-        img.style.width = w + "px";
-        img.style.height = "auto";
+      if (imageRatio <= targetRatio) {
+        coverImage.style.width = targetWidth + "px";
+        coverImage.style.height = "auto";
       }
       else {
-        img.style.width = "auto";
-        img.style.height = h + "px";
+        coverImage.style.width = "auto";
+        coverImage.style.height = targetHeight + "px";
       }
     }
 
     var coverRO = new ResizeObserver( entries => {
       for (let entry of entries) {
         const contentRect = entry.contentRect;
-
-        const cw = entry.contentRect.width;
-        const ch = entry.contentRect.height;
-
-        resize_cover_image(cw, ch);
+        const coverWidth = entry.contentRect.width;
+        const coverHeight = entry.contentRect.height;
+        resizeCoverImage(coverWidth, coverHeight);
       }
     });
 
     window.addEventListener('load', (event) => {
-      resize_cover_image(cover.clientWidth, cover.clientHeight);
+      resizeCoverImage(cover.clientWidth, cover.clientHeight);
       coverRO.observe(cover);
     });
 
     // Controls navbar behavior
-
-    var cover = document.getElementById("cover");
-    var topnav = document.getElementById("topnav");
-    var footer = document.getElementById("page-footer");
-
     var pageIsScrolled,
         reachedBottom,
         coverIsGone,
@@ -135,7 +131,7 @@
         scrolledDown,
         hideNavbar;
 
-    const COVER_THRESHOLD = -10; // Used to trigger coverIsGone
+    const coverThreshold = -10; // Used to trigger coverIsGone
     prevScroll = window.pageYOffset;
     topnav.classList.add("no-opacity");
 
@@ -153,7 +149,7 @@
       //   >= document.body.offsetHeight;
 
       pageIsScrolled = window.pageYOffset > 0;
-      coverIsGone = cover.getBoundingClientRect().bottom < COVER_THRESHOLD;
+      coverIsGone = cover.getBoundingClientRect().bottom < coverThreshold;
 
       currentScroll = window.pageYOffset;
       scrolledDown = currentScroll >= prevScroll;
