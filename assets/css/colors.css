@@ -15,7 +15,16 @@ h1, h2, h3, h4, h5, h6 {
   color: #222;
 }
 
+section, footer {
+  background-color: #fff;
+}
+
 footer {
+  color: #fff;
+  background-color: #111;
+}
+
+#cover {
   color: #fff;
   background-color: #111;
 }
@@ -28,7 +37,7 @@ blockquote, blockquote * {
   color: #222;
 }
 
-.cover, .post-thumbnail {
+.post-thumbnail {
   background-color: #111;
 }
 
