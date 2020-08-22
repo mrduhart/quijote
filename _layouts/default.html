@@ -117,10 +117,8 @@
       }
     });
 
-    window.addEventListener('load', (event) => {
-      resizeCoverImage(cover.clientWidth, cover.clientHeight);
-      coverRO.observe(cover);
-    });
+    resizeCoverImage(cover.clientWidth, cover.clientHeight);
+    coverRO.observe(cover);
 
     // Controls navbar behavior
     var pageIsScrolled,
