@@ -6,22 +6,10 @@ section, footer {
 
 section.intro {
   min-height: initial;
+  height: 100vh;
 }
 
 img.parallax {
-  /*
-  w h x y
-  = = a a *
-  = < a a *
-  = > a h *
-  < = a a *
-  < < a a *
-  < > a h *
-  > = w a *
-  > < w a *
-  > > w h *
-  */
-
   position: fixed;
 
   /* Center horizontally */

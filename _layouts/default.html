@@ -86,6 +86,41 @@
   <script src="{{ 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' | relative_url }}"></script>
 
   <script type="text/javascript">
+    // Resizes cover image
+    function resize_cover_image(w, h) {
+      const a = w / h;
+
+      const img = document.getElementById("img-cover");
+      const iw = img.clientWidth;
+      const ih = img.clientHeight;
+      const ai = iw / ih;
+
+      if (ai <= a) {
+        img.style.width = w + "px";
+        img.style.height = "auto";
+      }
+      else {
+        img.style.width = "auto";
+        img.style.height = h + "px";
+      }
+    }
+
+    var coverRO = new ResizeObserver( entries => {
+      for (let entry of entries) {
+        const contentRect = entry.contentRect;
+
+        const cw = entry.contentRect.width;
+        const ch = entry.contentRect.height;
+
+        resize_cover_image(cw, ch);
+      }
+    });
+
+    window.addEventListener('load', (event) => {
+      resize_cover_image(cover.clientWidth, cover.clientHeight);
+      coverRO.observe(cover);
+    });
+
     // Controls navbar behavior
 
     var cover = document.getElementById("cover");
