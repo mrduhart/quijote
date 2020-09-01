@@ -1,0 +1,17 @@
+square:
+  outer: [72, 86]
+  inner: [62, 62]
+  ratio: "1:1"
+wide:
+  outer: [108, 86]
+  inner: [99, 62]
+  ratio: "1.618:1"
+mini:
+  outer: [54, 86]
+  inner: [46, 62]
+  ratio: "1:1.348"
+digital:
+  - "1:1"
+  - "3:2"
+  - "4:3"
+  - "16:9"

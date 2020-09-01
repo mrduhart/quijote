@@ -94,6 +94,6 @@ Y así, recordando, me doy cuenta de que es en las experiencias más efímeras d
 
 Your mexican friend, <br>Bronson
 
-{% assign path='posts/2017-06-24-barcelona/looking-cool.jpeg' %}
+{% assign path='posts/2017-06-24-barcelona/looking-cool.jpg' %}
 {% assign text='Hellou, señouritas' %}
 {% include post-image.html path=path text=text %}

@@ -1,7 +1,7 @@
 ---
 place: Estado de México
 date: 2017-05-10 00:00:00 -06:00
-image: posts/2017-05-10-estado-mexico/aron-visuals-BXOXnQ26B7o-unsplash.jpg
+image: posts/2017-05-10-estado-mexico/hourglass.jpg
 ---
 
 Hola, mamá.
