@@ -35,3 +35,7 @@ defaults:
 show_drafts: false
 future: false
 markdown: kramdown
+cloudinary:
+  cloud_name: quijote
+  verbose: true
+  origin_url: https://mrduhart.github.io/quijote/
