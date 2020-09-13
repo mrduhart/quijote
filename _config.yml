@@ -35,7 +35,7 @@ markdown: kramdown
 cloudinary:
   cloud_name: quijote
   only_prod: true
-  verbose: true
+  verbose: false
   # origin_url: https://mrduhart.github.io/quijote/
   presets:
     default:

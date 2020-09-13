@@ -1,3 +1,5 @@
-url: /
-# url: http://192.168.99.100:4000
+url: ""
 ga_id: ""
+cloudinary:
+  verbose: true
+  origin_url: "/"
