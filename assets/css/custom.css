@@ -13,6 +13,14 @@ img {
   max-height: 100%;
 }
 
+.object-fit {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
 #cover {
   padding: 0;
   height: 100vh;
@@ -73,6 +81,7 @@ img {
 
 .post-thumbnails .box {
   position: relative;
+  /* To keep a (1 / padding-top) aspect ratio w/o fixed height: */
   padding-top: 61.8%;
 }
 

@@ -2,7 +2,12 @@
 
 <!-- cover  -->
 <section id="cover" class="intro">
-  <img id="cover-img" src="{{ cover_path }}" alt="A nice cover picture" class="grayscale-max" />
+  {% cloudinary
+    {{ cover_path }}
+    id="cover-img"
+    alt="{{ page.image }}"
+    class="grayscale-max"
+  %}
 
   <div class="overlay"></div>
 

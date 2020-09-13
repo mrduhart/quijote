@@ -1,0 +1,5 @@
+url: ""
+ga_id: ""
+cloudinary:
+  origin_url: "/"
+  verbose: true

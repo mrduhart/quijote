@@ -2,7 +2,9 @@
 <html lang="es">
 
 <head>
+  {% if jekyll.environment == "production" %}
   {% include analytics.html %}
+  {% endif %}
 
   {% if page.title %}
   <!-- <title>{{ page.title }} | {{ site.name }}</title> -->
