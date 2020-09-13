@@ -1,16 +1,3 @@
-<!-- {% capture about_path %}https://res.cloudinary.com/demo/image/upload/w_200,h_200,c_thumb,g_face/r_20,bo_5px_solid_black/l_cloudinary_icon,o_50,w_0.25,fl_relative,g_north_east,y_10,x_10/sample_woman.png{% endcapture %} -->
-
-<!-- {% capture about_path %}https://res.cloudinary.com/demo/image/upload/w_200,h_200,c_thumb,g_face/r_20,bo_5px_solid_black/l_cloudinary_icon,o_50,w_0.25,fl_relative,g_north_east,y_10,x_10/sample_woman.png{% endcapture %} -->
-
-<!-- {% capture about_path %}https://res.cloudinary.com/quijote/image/upload/w_400,h_400/about.jpg{% endcapture %} -->
-
-<!-- https://res.cloudinary.com/demo/image/upload/w_200,h_200,c_thumb,g_face/r_20,bo_5px_solid_black/l_cloudinary_icon,o_50,w_0.25,fl_relative,g_north_east,y_10,x_10/sample_woman.png -->
-
-{% capture about_path %}
-<!-- https://res.cloudinary.com/quijote/image/upload/w_400,h_400/about.jpg{% endcapture %} -->
-
-<!-- {{ '/assets/img/' | relative_url | append: page.image }} -->
-
 <section id="about" class="text">
   <div class="container">
     <div class="row">
@@ -24,10 +11,10 @@
       <div class="col-lg-5 col-md-8 col-10 mx-auto">
         <p>{% cloudinary
           /assets/img/about.jpeg
+          id="about-img"
           alt="Un quijote"
           class="img-fluid rounded-circle"
         %}</p>
-        <!-- <p><img src="{{ about_path }}" alt="" class="img-fluid rounded-circle"></p> -->
       </div>
 
     </div>

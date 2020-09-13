@@ -1,5 +1,5 @@
 url: ""
 ga_id: ""
 cloudinary:
-  verbose: true
   origin_url: "/"
+  verbose: true
