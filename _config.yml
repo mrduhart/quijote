@@ -1,9 +1,6 @@
 url: https://mrduhart.github.io
-baseurl: /quijote
-# github pages
-# ga_id: UA-153237091-3
-# dev
-ga_id: UA-153237091-1
+# baseurl: /quijote
+ga_id: UA-153237091-3
 
 name: Cómo ser un quijote
 author: Bronson Duhart
@@ -37,5 +34,10 @@ future: false
 markdown: kramdown
 cloudinary:
   cloud_name: quijote
+  only_prod: true
   verbose: true
-  origin_url: https://mrduhart.github.io/quijote/
+  # origin_url: https://mrduhart.github.io/quijote/
+  presets:
+    default:
+      attributes:
+        loading: lazy
