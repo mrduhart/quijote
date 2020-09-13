@@ -1,7 +1,11 @@
 <div class="polaroid-container">
   <div class="polaroid">
     <div class="polaroid-img">
-      <img src="{{ '/assets/img/' | relative_url | append: include.path }}" alt="" class="" />
+      {% cloudinary
+        {{ '/assets/img/' | relative_url | append: include.path }}
+        alt="{{ include.path }}"
+        class=""
+      %}
     </div>
 
     <div class="polaroid-txt">

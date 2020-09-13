@@ -27,8 +27,7 @@ layout: default
           <div class="col-lg-4 col-md-6">
             <div class="box">
               <article class="post-thumbnail"
-              style="background-image: url('{{ post_image }}')">
-
+              >
                 <div class="post-details">
                     <a href="{{ post.url | relative_url }}"></a>
                     <div class="overlay"></div>
@@ -42,7 +41,12 @@ layout: default
                     </div>
                 </div>
 
-                <!-- <img src="{{ '/assets/img/' | relative_url | append: post.image }}" alt="image" class="img-fluid grayscale-max"> -->
+                {% cloudinary
+                  {{ '/assets/img/' | relative_url | append: post.image }}
+                  alt="{{ post.image }}"
+                  class="object-fit"
+                %}
+
               </article>
             </div>
           </div>

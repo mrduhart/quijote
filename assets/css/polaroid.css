@@ -25,6 +25,9 @@
 .polaroid img {
   display: block;
   max-height: inherit;
+  /* Fixes cloudinary img width / height problem: */
+  width: auto;
+  height: auto;
 }
 .polaroid p {
   margin: 0;
