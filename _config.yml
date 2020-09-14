@@ -1,3 +1,4 @@
+exclude: [build.sh, Gemfile, Gemfile.lock]
 # github pages
 url: https://mrduhart.github.io
 # baseurl: /quijote
