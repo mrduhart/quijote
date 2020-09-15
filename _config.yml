@@ -18,14 +18,16 @@ about: |
 
   *Soy un hombre de visión con la cualidad de hacer las visiones realidad, así que vengo a ofrecerte una como regalo de cumpleaños. No tienes que tomarla, basta con escucharla. Te lo he dicho, te estoy mostrando un camino y queda en ti si quieres caminarlo; no es el único el mío.*
 
+lang: es
+date_format: "%A %B %d, %Y"
 
 defaults:
   -
     scope:
       path: ""
-      type: "posts"
+      type: posts
     values:
-      layout: "post"
+      layout: post
       permalink: /:year/:month/:day/:title
       excerpt_separator: <!-- more -->
 
