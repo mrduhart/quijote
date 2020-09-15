@@ -4,7 +4,7 @@ style: post/style.html
 ---
 
 {% capture pretty_date %}
-{% include date-locale.html date=page.date format=page.date_format %}
+{% include date-locale.html date=page.date %}
 {% endcapture %}
 {% include cover.html title=page.place subtitle=pretty_date %}
 

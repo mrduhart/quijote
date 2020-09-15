@@ -21,8 +21,14 @@ layout: default
         <div class="row post-thumbnails">
 
           {% for post in site.posts %}
-          {% assign pretty_date=post.date | date: "%A %B %d, %Y" %}
-          {% capture post_image %}{{ '/assets/img/' | relative_url | append: post.image }}{% endcapture %}
+
+          {% capture pretty_date %}
+          {% include date-locale.html date=post.date %}
+          {% endcapture %}
+
+          {% capture post_image %}
+          {{ '/assets/img/' | relative_url | append: post.image }}
+          {% endcapture %}
 
           <div class="col-lg-4 col-md-6">
             <div class="box">
