@@ -23,11 +23,13 @@ defaults:
   -
     scope:
       path: ""
-      type: "posts"
+      type: posts
     values:
-      layout: "post"
+      layout: post
       permalink: /:year/:month/:day/:title
       excerpt_separator: <!-- more -->
+      lang: es
+      date_format: "%A %B %d, %Y"
 
 show_drafts: false
 future: false

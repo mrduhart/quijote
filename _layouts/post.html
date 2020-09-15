@@ -3,7 +3,9 @@ layout: default
 style: post/style.html
 ---
 
-{% assign pretty_date=page.date | date: "%A %B %d, %Y" %}
+{% capture pretty_date %}
+{% include date-locale.html date=page.date format=page.date_format %}
+{% endcapture %}
 {% include cover.html title=page.place subtitle=pretty_date %}
 
 <!-- text page -->
